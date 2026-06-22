@@ -9,16 +9,5 @@
         "C2:0A:13:84:26:E6:0D:31:81:87:56:91:0C:28:34:9F:46:04:49:26:AF:C1:3B:49:9F:97:E3:22:D3:66:2B:E3"
       ]
     }
-  },
-  {
-    "relation": ["delegate_permission/common.handle_all_urls"],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "com.down2pk2015.ironvale",
-      "sha256_cert_fingerprints": [
-        "PASTE_APP_SIGNING_FINGERPRINT_HERE",
-        "PASTE_UPLOAD_FINGERPRINT_HERE"
-      ]
-    }
   }
 ]
