@@ -1,0 +1,26 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.driftpostgames.ironvale",
+      "sha256_cert_fingerprints": [
+        "0A:83:CD:9E:9E:D1:5D:05:D1:96:5B:79:82:EB:82:B1:86:C9:94:B5:15:CF:BB:4B:50:1B:02:05:38:C5:94:12",
+        "C2:0A:13:84:26:E6:0D:31:81:87:56:91:0C:28:34:9F:46:04:49:26:AF:C1:3B:49:9F:97:E3:22:D3:66:2B:E3"
+      ]
+    }
+  }
+]
+
+Commit changes.
+
+3. Add a .nojekyll file (same repo, so the dot-folder gets served)
+
+Add file → Create new file → filename .nojekyll → leave empty → Commit.
+
+4. Wait ~2 minutes, then open https://down2pk2015-ux.github.io/.well-known/assetlinks.json. It should now show the JSON (no /IronVale/ in the path). Tell me when it loads and I'll verify it, then you swipe the app closed and reopen it to drop the address bar.
+One note: this new repo becomes your domain's root site. That's fine — it only needs to hold the .well-known file; it won't affect your game at /IronVale/.You said: yeah i see it now with the https://down2pk2015-ux.yeah i see it now with the https://down2pk2015-ux.github.io/IronVale/.well-known/assetlinks.json thank you8:20 PMClaude responded: You're welcome!You're welcome! Quick but important catch though: the one that loads is the /IronVale/ path — and that's not the one that removes the address bar. Chrome only checks the bare root, without /IronVale/:
+https://down2pk2015-ux.github.io/.well-known/assetlinks.json
+So you still need to do the step from my last message: create the repo named exactly down2pk2015-ux.github.io and put the same .well-known/assetlinks.json (+ an empty .nojekyll) inside it. That's what makes the root URL above start working.
+You'll know it's done when that root link (no /IronVale/) shows the JSON. Then swipe the app closed and reopen it, and the bar should drop.
+Want to go ahead and create that down2pk2015-ux.github.io repo now? I'll stick with you through it.
